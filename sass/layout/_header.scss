@@ -1,0 +1,36 @@
+.slider {
+    padding: 215px 0 50px;
+    color: $secondary-font-color;
+    font-family: $secondary-font;
+    border-top: 1px solid rgba(221, 228, 234, 0.15);
+    .welcome {
+        padding: 3px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    p {
+        font-family: $tertiary-font;
+        font-size: 15px;
+        font-style: italic;
+        padding: 3px;
+        text-transform: none;
+        color: $secondary-font-color;
+    }
+    .carousel-switch {
+        text-align: center;
+        margin-top: 195px;
+        .carousel-bar {
+            margin: 0 3px;
+            display: inline-block;
+            width: 25px;
+            height: 4px;
+            background-color: #8f8f8f;
+            &:hover, &:active {
+                background-color: $orange;
+            }
+        }
+        .active {
+             background-color: $orange;
+         }
+    }
+}

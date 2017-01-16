@@ -1,0 +1,28 @@
+.read-more {
+    margin: 30px 0;
+    display: inline-block;
+    a {
+        color: $tertiary-font-color;
+        font-family: $secondary-font;
+        font-size: 13px;
+        font-weight: 900;
+        padding: 20px 33px;
+        border: 2px solid $orange;
+        &:hover {
+            background-color: #e13c00;
+            transition: 400ms;
+            text-decoration: none;
+            border: 2px solid #e13c00;
+        }
+    }
+}
+
+    header {
+        .read-more {
+            margin: 70px 4px;
+            a {
+                color: $primary-font-color;
+                background-color: $orange;
+            }
+        }
+    }

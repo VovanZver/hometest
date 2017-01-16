@@ -1,0 +1,66 @@
+$primary-font: 'Open Sans', sans-serif;
+$secondary-font: 'Raleway', sans-serif;
+$tertiary-font: 'Lora', serif;
+
+$main-weight: 600;
+
+h1,h2, h3, a, .welcome, .name {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 10px 0;
+    line-height: 45px;
+    font-weight: 900;
+}
+
+h2, .day {
+    font-size: 30px;
+    font-weight: 800;
+    font-family: $secondary-font;
+}
+
+h3 {
+    font-weight: 900;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.subscription {
+    font-style: italic;
+    padding-bottom: 40px;
+    font-family: $tertiary-font;
+}
+
+.subscription, h3 {
+    color: $primary-font-color;
+    font-size: 16px;
+}
+
+p, .info {
+    line-height: 28px;
+    color: $paragraph-font-color;
+    font-family: $primary-font;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.name {
+    color: $primary-font-color;
+    font-family: $secondary-font;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.news {
+    .day {
+        font-family: $primary-font;
+    }
+}
+
+
+
+

@@ -1,0 +1,67 @@
+header {
+    background: url("../../images/bg-image.png") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    .navbar-nav {
+        float: right;
+    }
+
+    .navbar-inverse, .navbar-toggle, .navbar-inverse .navbar-form, .navbar-inverse .navbar-toggle:focus,
+    .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-collapse {
+        background-color: transparent;
+        border: none;
+    }
+
+    .navbar-fixed-bottom, .navbar-fixed-top {
+        position: relative;
+        padding: 31px 0;
+        margin: 0;
+    }
+
+    .navbar-brand {
+        padding: 14px 11px 14px 0;
+        height: 0;
+        line-height: 0;
+        margin-top: -12px;
+    }
+
+    .navbar-inverse .navbar-nav li a, .navbar .navbar-header .phone-number{
+        color: $secondary-font-color;
+        margin-left: 16px;
+        font-family: $primary-font;
+        font-size: 14px;
+        font-weight: $main-weight;
+        text-transform: uppercase;
+    }
+
+    .navbar .navbar-header .phone-number {
+        display: inline-block;
+        background: url("../../images/phone-icon.png") no-repeat;
+        background-position-x: 18px;
+        padding: 1px 0 4px 50px;
+        margin: 13px;
+        border-left: 1px solid rgba(255, 255, 255, 0.15);
+        &:hover {
+            color: $tertiary-font-color;
+            transition: 0.5s;
+            text-decoration: none;
+        }
+    }
+
+    .navbar-inverse .navbar-nav li a:focus, .navbar-inverse .navbar-nav li a:hover {
+        color: $tertiary-font-color;
+        background-color: transparent;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    header {
+        .navbar-inverse .navbar-nav li a {
+            padding: 14px 8px;
+            margin-left: 10px;
+            font-size: 12px;
+        }
+    }
+}
+

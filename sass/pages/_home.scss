@@ -1,0 +1,179 @@
+.about-us {
+    background-color: $white;
+}
+
+.description {
+    float: right;
+}
+
+.services, .news {
+    background-color: $blue-gray;
+}
+
+.services, .about-us, .clients, .news {
+    .container {
+        padding: $section-vertical-padding
+    }
+}
+
+li {
+    list-style: none;
+}
+
+.services-description {
+    display: inline-block;
+    li{
+        padding-top: 70px;
+        float: left;
+        max-width: 50%;
+        margin: auto 0;
+        &:nth-child(even) {
+            float: right;
+        }
+    }
+}
+
+.boost-bg, .online-bg, .analyzing-bg, .time-bg {
+    padding: 0 0 0 120px;
+    &:hover {
+        transition: 500ms;
+    }
+}
+
+.boost-bg {
+    background: url("../images/service-icons/rocket.png") no-repeat left top;
+    &:hover {
+        background: url("../../images/service-icons/rocket-hover.png") no-repeat left top;
+    }
+}
+
+.online-bg {
+    background: url("../../images/service-icons/support-icon.png") no-repeat left top;
+    &:hover {
+        background: url("../../images/service-icons/support-icon-hover.png") no-repeat left top;
+    }
+}
+
+.analyzing-bg {
+    background: url("../../images/service-icons/analyzing-icon.png") no-repeat left top;
+    &:hover {
+        background: url("../../images/service-icons/analyzing-icon-hover.png") no-repeat left top;
+    }
+}
+
+.time-bg {
+    background: url("../../images/service-icons/clock-icon.png") no-repeat left top;
+    &:hover {
+        background: url("../../images/service-icons/clock-icon-hover.png") no-repeat left top;
+    }
+}
+
+
+
+.services {
+    .description:before {
+        position: absolute;
+        margin-top: -10px;
+        width: 14px;
+        height: 2px;
+        background-color: #36a8ff;
+        content: '';
+        display: none;
+        }
+    .read-more {
+        padding-top: 40px;
+    }
+    .container {
+        background: url("../../images/triangles-bg.png") no-repeat right bottom;
+    }
+}
+
+.info {
+    text-align: right;
+    line-height: 15px;
+}
+
+.comments, .views {
+    padding-top: 25px;
+}
+
+.comments {
+    background: url("../../images/comment-icon.png") no-repeat right top;
+}
+
+.views {
+    background: url("../../images/view-icon.png") no-repeat right top;
+}
+
+.services .description:hover::before {
+    display: block;
+}
+
+.clients-comments-slider {
+    ul {
+        padding-top: 15px;
+        display: inline-block;
+        display: -webkit-inline-box;
+    }
+    li {
+        max-width: 33%;
+        padding-right: 65px;
+    }
+    p {
+        padding-top: 30px;
+    }
+    .name {
+        padding-top: 15px;
+    }
+}
+
+.gray-quote {
+    background: url("../../images/quote-icon-gray.png") no-repeat left top;
+}
+
+.blue-quote {
+    background: url("../../images/quote-icon-blue.png") no-repeat left top;
+}
+
+.orange-quote {
+    background: url("../../images/quote-icon-orange.png") no-repeat left top;
+}
+
+.slider-switch {
+    padding-top: 40px;
+    .active, a:hover {
+        background-color: $orange;
+    }
+    a {
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background-color: #36a8ff;
+        display: inline-block;
+    }
+    li {
+        padding-right: 5px;
+    }
+}
+
+.top-news {
+    max-width: 50%;
+    padding-top: 45px;
+}
+.date, .comments {
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid $orange;
+}
+
+.first {
+    h3 {
+        padding: 15px 0 0;
+    }
+}
+
+.news {
+    .col-sm-10 {
+        float: right;
+    }
+}
